@@ -14,6 +14,8 @@
     --purple-100: hsl(275, 100%, 97%);
     --purple-600: hsl(292, 16%, 49%);
     --purple-950: hsl(292, 42%, 14%);
+
+    --primary: hsl(281, 83%, 54%)
 }
 
 .sr-only {
@@ -49,6 +51,19 @@ body {
     background-color: var(--white);
     color: var(--purple-950);
     border-radius: .5em;
+
+    header {
+        display: flex;
+        gap: 1.5rem;
+
+        font-size: 1.25rem;
+
+        img {
+            order: -1;
+            inline-size: 1.5rem;
+        }
+    }
+
 }
 
 ul {
@@ -66,6 +81,12 @@ summary {
     list-style: none;
     font-weight: 600;
     color: var(--purple-950);
+
+    &:is(:focus-visible, :hover){
+        color: var(--primary);
+        cursor: pointer;
+        outline: none;
+    }
 }
 
 details {
@@ -86,7 +107,7 @@ summary::after {
     flex-shrink: 0;
     inline-size: 2rem;
     aspect-ratio: 1;
-    
+
     background-image: url('assets/images/icon-plus.svg');
 }
 
