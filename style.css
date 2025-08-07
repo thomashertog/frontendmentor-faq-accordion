@@ -43,7 +43,7 @@ body {
 .card {
     place-self: start;
 
-    inline-size: min(90vw, 70ch);
+    inline-size: min(90vw, 55ch);
     padding: 1rem;
     margin-inline: auto;
     margin-block-start: -5rem;
