@@ -46,11 +46,15 @@ body {
     inline-size: min(90vw, 55ch);
     padding: 1rem;
     margin-inline: auto;
-    margin-block-start: -5rem;
+    margin-block-start: -7rem;
 
     background-color: var(--white);
     color: var(--purple-950);
     border-radius: .5em;
+
+    @media screen and (min-width: 40rem) {
+        margin-block-start: -9rem;
+    }
 
     header {
         display: flex;
