@@ -58,9 +58,14 @@ body {
 
         font-size: 1.25rem;
 
+        @media screen and (min-width: 40rem) {
+            font-size: 2.25rem;
+            
+        }
+
         img {
             order: -1;
-            inline-size: 1.5rem;
+            inline-size: 1em;
         }
     }
 
